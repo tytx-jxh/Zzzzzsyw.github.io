@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>独属小Z的秘密天地</title>
+    <meta name="description" content="独属小Z的秘密天地">
+    <meta name="keywords" content="独属小Z的秘密天地，可编辑网站">
+    <meta name="author" content="Your Name">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/your-repo-name/">
+    <meta property="og:title" content="独属小Z的秘密天地">
+    <meta property="og:description" content="独属小Z的秘密天地">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/your-repo-name/">
+    <meta property="twitter:title" content="独属小Z的秘密天地">
+    <meta property="twitter:description" content="独属小Z的秘密天地">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/images.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand editable-text" data-key="nav-brand">独属小Z的秘密天地</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="editable-text" data-key="nav-home">主页</a></li>
+                <li><a href="#about" class="editable-text" data-key="nav-about">有关于你</a></li>
+                <li><a href="#beauty" class="editable-text" data-key="nav-beauty">一些碎片</a></li>
+                <li><a href="#future" class="editable-text" data-key="nav-future">我眼中的你</a></li>
+                <li><a href="#message" class="editable-text" data-key="nav-message">想对你说</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页Hero轮播图区域 -->
+    <section id="home" class="hero-carousel-section">
+        <div class="hero-carousel-container">
+            <div class="hero-carousel-slides">
+                <div class="hero-slide active">
+                    <div class="hero-slide-bg editable-image" data-key="hero-slide-1-bg">
+                        <div class="image-upload-hint">点击上传背景图片</div>
+                    </div>
+                    <div class="hero-slide-overlay"></div>
+                    <div class="hero-slide-content">
+                        <h1 class="hero-slide-title editable-text" data-key="hero-slide-1-title">每一段相遇都是人生的奇遇</h1>
+                        <h2 class="hero-slide-subtitle editable-text" data-key="hero-slide-1-subtitle">遇见你</h2>
+                        <p class="hero-slide-description editable-text" data-key="hero-slide-1-description">我很开心</p>
+
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-slide-bg editable-image" data-key="hero-slide-2-bg">
+                        <div class="image-upload-hint">点击上传背景图片</div>
+                    </div>
+                    <div class="hero-slide-overlay"></div>
+                    <div class="hero-slide-content">
+                        <h1 class="hero-slide-title editable-text" data-key="hero-slide-2-title">小羊不希望你想太多</h1>
+                        <h2 class="hero-slide-subtitle editable-text" data-key="hero-slide-2-subtitle">希望你可以无所畏惧的发疯</h2>
+                        <p class="hero-slide-description editable-text" data-key="hero-slide-2-description">
+                            天天开心<br>然后睡个好觉</p>
+
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="hero-slide-bg editable-image" data-key="hero-slide-3-bg">
+                        <div class="image-upload-hint">点击上传背景图片</div>
+                    </div>
+                    <div class="hero-slide-overlay"></div>
+                    <div class="hero-slide-content">
+                        <h1 class="hero-slide-title editable-text" data-key="hero-slide-3-title">送给小Z的秘密天地</h1>
+                        <h2 class="hero-slide-subtitle editable-text" data-key="hero-slide-3-subtitle">生命久如暗室</h2>
+                        <p class="hero-slide-description editable-text" data-key="hero-slide-3-description">不妨碍你明写春诗</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 轮播图控制 -->
+            <button class="hero-carousel-prev">‹</button>
+            <button class="hero-carousel-next">›</button>
+
+            <!-- 轮播图指示器 -->
+            <div class="hero-carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+
+            <!-- 可爱的粉色按钮 -->
+            <div class="hero-button-container">
+                <button class="hero-cute-button" onclick="scrollToAbout()">
+                    <span class="button-text">点点我吧</span>
+                    <span class="button-heart">💕</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 关于我们 -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title editable-text" data-key="about-title">情绪盒子</h2>
+            <p class="section-description editable-text" data-key="about-description">希望你用不到这个哈哈哈哈</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year editable-text" data-key="timeline-1-year">开心</div>
+                    <div class="timeline-content editable-text" data-key="timeline-1-content">那就好好享受开心的时刻 今天很好 明天依旧会这样
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year editable-text" data-key="timeline-2-year">焦虑</div>
+                    <div class="timeline-content editable-text" data-key="timeline-2-content">世界太吵了 听听自己的心就好 不要太敏感
+                        人生是不会完蛋的</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year editable-text" data-key="timeline-3-year">平静</div>
+                    <div class="timeline-content editable-text" data-key="timeline-3-content">如果比较peace那就祝你早安午安晚安 </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year editable-text" data-key="timeline-4-year">难过</div>
+                    <div class="timeline-content editable-text" data-key="timeline-4-content">听会歌怎么样 或者你可以和我说说话 允许自己脆弱
+                        允许万物穿过</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year editable-text" data-key="timeline-5-year">纠结</div>
+                    <div class="timeline-content editable-text" data-key="timeline-5-content">拜托啊喂 不要纠结 just do it!
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year editable-text" data-key="timeline-6-year">自我否定</div>
+                    <div class="timeline-content editable-text" data-key="timeline-6-content">亲爱的好朋友 你要相信你真的是一个很棒很棒的人
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 怎么能这么漂亮 -->
+    <section id="beauty" class="beauty-section">
+        <div class="container">
+            <h2 class="section-title editable-text" data-key="beauty-title">一些碎片</h2>
+            <p class="section-description editable-text" data-key="beauty-description">你是最特别的存在</p>
+
+            <div class="beauty-gallery">
+                <div class="beauty-item">
+                    <div class="beauty-image editable-image" data-key="beauty-1-image">
+                        <div class="image-upload-hint">点击上传图片</div>
+                    </div>
+                    <div class="beauty-caption editable-text" data-key="beauty-1-caption">我有一个好朋友</div>
+                </div>
+                <div class="beauty-item">
+                    <div class="beauty-image editable-image" data-key="beauty-2-image">
+                        <div class="image-upload-hint">点击上传图片</div>
+                    </div>
+                    <div class="beauty-caption editable-text" data-key="beauty-2-caption">他真诚善良</div>
+                </div>
+                <div class="beauty-item">
+                    <div class="beauty-image editable-image" data-key="beauty-3-image">
+                        <div class="image-upload-hint">点击上传图片</div>
+                    </div>
+                    <div class="beauty-caption editable-text" data-key="beauty-3-caption">对我很好</div>
+                </div>
+                <div class="beauty-item">
+                    <div class="beauty-image editable-image" data-key="beauty-4-image">
+                        <div class="image-upload-hint">点击上传图片</div>
+                    </div>
+                    <div class="beauty-caption editable-text" data-key="beauty-4-caption">我喜欢和他玩</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我眼中的你 -->
+    <section id="future" class="future-section">
+        <div class="container">
+            <h2 class="section-title editable-text" data-key="future-title">我眼中的小Z</h2>
+            <p class="section-description editable-text" data-key="future-description">世中逢尔 已胜过千万泛泛之交</p>
+
+            <div class="future-grid">
+                <div class="future-card">
+                    <div class="future-icon">🌸</div>
+                    <h3 class="future-card-title editable-text" data-key="future-1-title">你的超强观察力</h3>
+                    <p class="future-card-content editable-text" data-key="future-1-content">谢谢你 找到我 我震惊有人驻足与我 让我开始明媚
+                    </p>
+                </div>
+                <div class="future-card">
+                    <div class="future-icon">💕</div>
+                    <h3 class="future-card-title editable-text" data-key="future-2-title">你的炙热真诚</h3>
+                    <p class="future-card-content editable-text" data-key="future-2-content">
+                        手写信、尼泊尔本、事无巨细（everything）的关心 让我开始相信纯粹的善意</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-icon">🎵</div>
+                    <h3 class="future-card-title editable-text" data-key="future-3-title">你的慷慨大方</h3>
+                    <p class="future-card-content editable-text" data-key="future-3-content">让我看了好多特效 点亮了我的新人展馆和满贯 我无语凝噎
+                        我相看泪眼</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-icon">🌟</div>
+                    <h3 class="future-card-title editable-text" data-key="future-4-title">你的心思细腻</h3>
+                    <p class="future-card-content editable-text" data-key="future-4-content">隔着屏幕通过文字和表情会感知我的状态
+                        默默的陪我重拾阳光</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-icon">🎨</div>
+                    <h3 class="future-card-title editable-text" data-key="future-5-title">你的耐心靠谱</h3>
+                    <p class="future-card-content editable-text" data-key="future-5-content">总会提醒我一些我注意不到的小问题 一遍一遍的叮嘱我
+                        你=安心</p>
+                </div>
+                <div class="future-card">
+                    <div class="future-icon">💝</div>
+                    <h3 class="future-card-title editable-text" data-key="future-6-title">你本来就是一个很好的人</h3>
+                    <p class="future-card-content editable-text" data-key="future-6-content">你的出现就是我生命中最珍贵的礼物</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计数据区域 -->
+    <!-- <div class="image-upload-hint">点击上传背景图片</div> -->
+    <!-- <section class="stats-section editable-image" data-key="stats-bg">
+
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-icon">❤️</div>
+                    <div class="stat-number editable-text" data-key="stat-1-number">365</div>
+                    <div class="stat-label editable-text" data-key="stat-1-label">相恋天数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🎂</div>
+                    <div class="stat-number editable-text" data-key="stat-2-number">23</div>
+                    <div class="stat-label editable-text" data-key="stat-2-label">岁生日</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">💕</div>
+                    <div class="stat-number editable-text" data-key="stat-3-number">3</div>
+                    <div class="stat-label editable-text" data-key="stat-3-label">次生日</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌟</div>
+                    <div class="stat-number editable-text" data-key="stat-4-number">1</div>
+                    <div class="stat-label editable-text" data-key="stat-4-label">唯一的你</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- 想对你说 -->
+    <section id="message" class="message-section">
+        <div class="container">
+            <h2 class="section-title editable-text" data-key="message-title">想对你说</h2>
+            <p class="section-description editable-text" data-key="message-description">一些想要对你说的话，好的坏的都想说</p>
+
+            <div class="message-cards">
+                <div class="message-card">
+                    <div class="message-image editable-image" data-key="message-1-image"></div>
+                    <div class="message-content editable-text" data-key="message-1-content">800字小作文</div>
+                </div>
+                <div class="message-card">
+                    <div class="message-image editable-image" data-key="message-2-image"></div>
+                    <div class="message-content editable-text" data-key="message-2-content">你很珍贵</div>
+                </div>
+                <div class="message-card">
+                    <div class="message-image editable-image" data-key="message-3-image"></div>
+                    <div class="message-content editable-text" data-key="message-3-content">一些碎碎念</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 底部信息 -->
+    <footer class="footer editable-image" data-key="footer-bg">
+        <div class="image-upload-hint">点击上传背景图片</div>
+        <div class="footer-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title editable-text" data-key="footer-title-1">关于这个网站</h3>
+                    <p class="footer-text editable-text" data-key="footer-content-1">这是一个专为小Z打造的秘密空间 希望在未来的某一天 可以带给你一些力量
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title editable-text" data-key="footer-title-2">不知道未来的你怎么样</h3>
+                    <p class="footer-text editable-text" data-key="footer-content-2">至少现在的你很勇敢 与荒漠戈壁作伴 仍然长成了内心丰盈的苍天大树
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title editable-text" data-key="footer-title-3">如果你某天想起来它</h3>
+                    <p class="footer-text editable-text" data-key="footer-content-3">请记得 有人曾为你哗然 轻舟快船 祝你好过春山</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p class="editable-text" data-key="footer-copyright">© 2025 小Z的秘密天地. All rights reserved.</p>
+                    <p class="footer-subtitle editable-text" data-key="footer-subtitle">Created with ❤️ by 小羊不吃糖</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 编辑工具栏 -->
+    <!-- <div id="edit-toolbar" class="edit-toolbar">
+        <button id="toggle-mode-btn" class="toolbar-btn mode-btn">✏️ 编辑模式</button>
+        <button id="save-btn" class="toolbar-btn">💾 保存</button>
+        <button id="reset-btn" class="toolbar-btn">🔄 重置</button>
+        <button id="export-btn" class="toolbar-btn">📤 导出</button>
+        <button id="config-export-btn" class="toolbar-btn">⚙️ 导出配置</button>
+        <button id="toggle-toolbar-btn" class="toolbar-btn toggle-btn">⬇️</button>
+    </div> -->
+
+    <!-- 悬浮显示工具栏按钮 -->
+    <!-- <div id="show-toolbar-btn" class="show-toolbar-btn" style="display: none;">
+        <button class="floating-btn">⚙️</button>
+    </div> -->
+
+
+
+    <!-- 配置文件 - 必须最先加载 -->
+    <script src="js/text-config.js"></script>
+    <script src="js/config.js"></script>
+    <!-- 内容加载器 - 在配置文件之后加载 -->
+    <script src="js/content-loader.js"></script>
+    <!-- 其他功能脚本 -->
+    <script src="js/hero-carousel.js"></script>
+    <script src="js/editor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

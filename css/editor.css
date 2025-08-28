@@ -1,0 +1,487 @@
+/* 编辑器样式 */
+.editable-text,
+.editable-image {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* 只在编辑模式下显示指针光标和悬停效果 */
+.editing-mode .editable-text,
+.editing-mode .editable-image {
+    cursor: pointer;
+}
+
+/* 静态模式下隐藏所有编辑相关的样式 */
+.static-mode .editable-text,
+.static-mode .editable-image {
+    cursor: default;
+}
+
+.static-mode .editable-text:hover,
+.static-mode .editable-image:hover {
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+}
+
+/* 静态模式下隐藏编辑提示和上传元素 */
+.static-mode .image-upload-input {
+    display: none;
+}
+
+.static-mode .edit-hint {
+    display: none !important;
+}
+
+/* 只在编辑模式下显示悬停效果 */
+.editing-mode .editable-text:hover,
+.editing-mode .editable-image:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+    border-radius: 4px;
+    outline: 2px dashed #3498db;
+}
+
+.editable-text.editing {
+    background-color: rgba(52, 152, 219, 0.2);
+    border-radius: 4px;
+    outline: 2px solid #3498db;
+}
+
+/* 内联编辑器 */
+.inline-editor {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.inline-editor input,
+.inline-editor textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    padding: 4px;
+    border-radius: 4px;
+    outline: none;
+    resize: vertical;
+}
+
+.inline-editor input:focus,
+.inline-editor textarea:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 0 2px #3498db;
+}
+
+/* 图片编辑器 */
+.image-editor {
+    position: relative;
+    display: inline-block;
+}
+
+.image-upload-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(52, 152, 219, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 只在编辑模式下显示图片上传覆盖层 */
+.editing-mode .image-editor:hover .image-upload-overlay {
+    opacity: 1;
+}
+
+/* 静态模式下隐藏图片上传覆盖层和提示 */
+.static-mode .image-upload-overlay {
+    display: none !important;
+}
+
+.static-mode .image-upload-hint {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+.image-upload-text {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.image-upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* 编辑工具栏 */
+.edit-toolbar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.edit-toolbar:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.toolbar-btn {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.toolbar-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.toolbar-btn:active {
+    transform: translateY(0);
+}
+
+/* 模式切换按钮 */
+.mode-btn {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+    font-weight: 600;
+}
+
+.mode-btn:hover {
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
+/* 工具栏切换按钮 */
+.toggle-btn {
+    background: linear-gradient(45deg, #95a5a6, #7f8c8d);
+    padding: 12px;
+    min-width: 40px;
+    justify-content: center;
+}
+
+.toggle-btn:hover {
+    box-shadow: 0 4px 12px rgba(149, 165, 166, 0.3);
+}
+
+/* 保存指示器 */
+.save-indicator {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 1001;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+.save-indicator.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.save-indicator.error {
+    background: #e74c3c;
+}
+
+/* 编辑提示 */
+.edit-hint {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c3e50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+.edit-hint::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #2c3e50;
+}
+
+.editable-text:hover .edit-hint,
+.editable-image:hover .edit-hint {
+    opacity: 1;
+}
+
+/* 模态框样式 */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #7f8c8d;
+    transition: color 0.3s ease;
+}
+
+.modal-close:hover {
+    color: #e74c3c;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.modal-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.modal-btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.modal-btn-primary:hover {
+    background: #2980b9;
+}
+
+.modal-btn-secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.modal-btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .edit-toolbar {
+        bottom: 10px;
+        right: 10px;
+        flex-direction: column;
+        border-radius: 15px;
+    }
+    
+    .toolbar-btn {
+        border-radius: 10px;
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .modal-content {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .edit-hint {
+        display: none;
+    }
+}
+
+/* 加载动画 */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 拖拽上传样式 */
+.drag-over {
+    background-color: rgba(52, 152, 219, 0.1) !important;
+    border: 2px dashed #3498db !important;
+}
+
+.drag-over .image-upload-overlay {
+    opacity: 1 !important;
+    background: rgba(52, 152, 219, 0.9) !important;
+}
+
+/* 悬浮显示工具栏按钮 */
+.show-toolbar-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1001;
+    animation: pulse 2s infinite;
+}
+
+.floating-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(52, 152, 219, 0.4);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(52, 152, 219, 0.6);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* 展示模式下隐藏编辑相关元素 */
+.display-mode .editable-text:hover,
+.display-mode .editable-image:hover {
+    background-color: transparent !important;
+    outline: none !important;
+}
+
+.display-mode .edit-hint {
+    display: none !important;
+}
+
+.display-mode .image-upload-overlay {
+    display: none !important;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}

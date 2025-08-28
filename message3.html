@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一些碎碎念 - 独属小Z的秘密天地</title>
+    <meta name="description" content="给小Z的一些碎碎念">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: '楷体', 'KaiTi', 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: url('images/talk/talk-3.jpg') center center/cover no-repeat fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .message-container {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .message-title {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .message-content {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: #444;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .message-content p {
+            margin-bottom: 20px;
+        }
+
+        .thought-item {
+            background: rgba(255, 255, 255, 0.3);
+            border-left: 4px solid #ff9a9e;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 154, 158, 0.3);
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 154, 158, 0.4);
+        }
+
+        .back-button:active {
+            transform: translateY(-1px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .message-container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+
+            .message-title {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            .message-content {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+
+            .thought-item {
+                padding: 12px 15px;
+                margin: 15px 0;
+            }
+
+            .back-button {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .message-container {
+                padding: 25px 15px;
+            }
+
+            .message-title {
+                font-size: 1.8rem;
+            }
+
+            .message-content {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message-container">
+        <h1 class="message-title">哈喽，小z</h1>
+        <div class="message-content">
+            <p>我是2025年的小羊<br>
+                不知道你看到这个是什么时候<br>
+                现在的你还敏感内耗吗<br>
+                还是很容易共情吗<br>
+                还是扮演的骑士的角色，在守护好身边的每一个人吗<br>
+                不知道你累不累，应该没有变成一个机器人吧<br>
+                你的MBTI还是ISFJ嘛，拜托，这很累的</p>
+
+            <p>你大学的朋友还有联系嘛还在怀念那个时候吗那可是你最有少年心气的一段时光<br>
+                现在的你身边有没有很好的朋友<br>
+                你还会害怕孤独吗 有没有人听你讲心里话<br>
+                晚上还是只睡几个小时吗<br>
+                还有在听颜人中的歌吗<br>
+                还喜欢电闪雷鸣倾盆大雨的天气吗<br>
+                现在你还有病态的容貌焦虑和身材焦虑吗<br>
+                还有飞机失事这个不好的想法吗</p>
+
+            <p>最重要的是你现在快乐吗<br>
+                有没有收获很多幸福<br>
+                你要知道，你幸福的话我会比你更开心<br>
+                对了 你说要去地中海去了吗<br>
+                其实我的意思是你有没有完成你之前想完成的心愿<br>
+                你会偶尔想起我吗 你总害怕我忘了你，放心吧，我不会忘记你的</p>
+
+            <p>当然啊，除了这些问题我也有话跟你说<br>
+                我希望你可以天天开心，早点睡觉，好好吃饭，顺顺利利无忧无虑。<br>
+                希望你平平安安永远幸福快乐，永远没有烦恼，希望你被爱，希望你路途平坦，不纠结当下也不忧虑未来，不站在雾里，大胆的往前走。<br>
+                我希望你能热爱自由，肆意生活，希望你一直善良勇敢一点不缺面对黑暗的勇气，同时也可以在这个浑浊的世界里勇敢的做自己，站在迎着光的方向活成自己想要的样子</p>
+
+            <p>锦上添花之外，希望你趋避噩祟，长宁逢瑞。<br>
+                那就拂去旧诗满身的风雪，冬去后你我再来祝春天。</p>
+
+            <p style="text-align: right; margin-top: 30px;">满怀碎碎念的小羊<br>2025年</p>
+        </div>
+
+        <a href="index.html#message" class="back-button">🌟 返回主页</a>
+    </div>
+</body>
+
+</html>
